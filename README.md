@@ -108,10 +108,7 @@ En el cuadro de diálogo Conexión de red Detalles que aparece, la dirección IP
 
 Para encontrar la dirección IP de un ordenador Linux, escriba lo siguiente en la línea de comandos:  
 
-### ifconfig | grep "inet addr" ###
-
-
-### Resultados propuestos ###
+$ ifconfig | grep "inet addr" 
 
 ### Proyecto De Acceso Codificado ###
 
