@@ -23,36 +23,49 @@ Ademas, se utilizara un sistema fotovoltaico que alimente los circuitos eléctri
 ![Arduino](http://arduino-info.wikispaces.com/file/view/Mega2560_R3_Label-small-v2%20(2).png/471429496/800x526/Mega2560_R3_Label-small-v2%20(2).png "Arduino Mega")
 
 1. Acceso electromecánico:
- * Microcontrolador Atmega328  
+ * Microcontrolador Atmega328
+ * Soket de 24 pines  
+ * Cristal de 4MHz  
  * Programador arduino UNO  
  * Pantalla LCD 16x2  
  * Teclado 4x3  
- * Vaquela  
+ * Resistencias
+ * PCB circuito impreso  
 
 2. Circuito fotovoltaico  
  * MSP-EXP430G2 LaunchPad  
  * 2 Fotoresistencias  
  * Celdas solares 12V 200mAh  
- *  Bateria Recargable  
+ * Bateria Recargable  
  * Servomotores  
  * 3 Diodos 1N4007  
  * 3 Capacitores cerámicos de 0.1uF  
  * Regulador LM317  
  * Regulador LM7805  
  * Triac de 100 ohmios  
+  
+3. Sistema de riego  
+ * 9 Goteros de 2 lph  
+ * 6 mts de manguera de 16mm OP  
+ * 1 Adaptador 3/4" FHT x NPT Hembra x Macho    
+ * 1 Adaptador macho de 3/4"  
+ * 1 Buje soldado de 3/4" x 1/2"  
+ * 1 Cono de transicion de 1/2" x 16 mm  
+ * 2 Tee de 16mm  
+ * 1 Codo de 16mm  
+ * 3 Terminales de 16 mm
+ * 1 Servomotor    
+  
+4. Invernadero monitoreo web  
 
-3. Invernadero monitoreo web
-
- * Una placa Arduino como el Arduino Uno
- * Un escudo Arduino Ethernet
- * Un cable Ethernet, cable para conectar directamente a su router de red
- * Un cable USB para alimentar y programar el Arduino
- * Una tarjeta micro SD, por ejemplo, una tarjeta de 2 GB que es compatible SPI - sólo es necesario para algunos de los servidores
- * Una computadora con una ranura de tarjeta micro SD o un lector de tarjetas con una ranura para tarjeta micro SD - sólo se requiere
-    para los servidores de la tarjeta SD
+ * Una placa Arduino como el Arduino Uno  
+ * Un escudo Arduino Ethernet  
+ * Un cable Ethernet, cable para conectar directamente a su router de red  
+ * Un cable USB para alimentar y programar el Arduino  
+ * Una tarjeta micro SD, por ejemplo, una tarjeta de 2 GB que es compatible SPI - sólo es necesario para algunos de los servidores  
+ * Una computadora con una ranura de tarjeta micro SD o un lector de tarjetas con una ranura para tarjeta micro SD - sólo se requiere para los servidores de la tarjeta SD  
 
 
-### Instrucciones para instalar, configurar, o ejecutar el programa ###
 
 ### Instalación IDE arduino   
 
