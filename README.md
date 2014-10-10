@@ -21,18 +21,32 @@ Ademas, se utilizara un sistema fotovoltaico que alimente los circuitos eléctri
 ### Materiales ###
 ![Energia LaunchPad](http://energia.nu/img/LaunchPadMSP430G2452-v1.5.jpg "MSP-EXP430G2 LaunchPad")
 ![Arduino](http://arduino-info.wikispaces.com/file/view/Mega2560_R3_Label-small-v2%20(2).png/471429496/800x526/Mega2560_R3_Label-small-v2%20(2).png "Arduino Mega")
+<<<<<<< HEAD
 
 1. Acceso electromecánico:
  * Microcontrolador Atmega328
  * Soket de 24 pines  
  * Cristal de 4MHz  
+=======
+  
+1. Construcción invernadero
+  * 6 Tubos PVC de 1/2
+  * 1 madeja de pita
+  * 4 metros de cordón
+  * 1 varilla metalica 
+  * 16 codos
+  * Segueta
+
+2. Acceso electromecánico:
+ * Microcontrolador Atmega328  
+>>>>>>> 0986ad21bd97cc50df6ebba659872d7c9f70137e
  * Programador arduino UNO  
  * Pantalla LCD 16x2  
  * Teclado 4x3  
  * Resistencias
  * PCB circuito impreso  
 
-2. Circuito fotovoltaico  
+3. Circuito fotovoltaico  
  * MSP-EXP430G2 LaunchPad  
  * 2 Fotoresistencias  
  * Celdas solares 12V 200mAh  
@@ -65,6 +79,10 @@ Ademas, se utilizara un sistema fotovoltaico que alimente los circuitos eléctri
  * Una tarjeta micro SD, por ejemplo, una tarjeta de 2 GB que es compatible SPI - sólo es necesario para algunos de los servidores  
  * Una computadora con una ranura de tarjeta micro SD o un lector de tarjetas con una ranura para tarjeta micro SD - sólo se requiere para los servidores de la tarjeta SD  
 
+<<<<<<< HEAD
+=======
+4. Invernadero monitoreo web
+>>>>>>> 0986ad21bd97cc50df6ebba659872d7c9f70137e
 
 
 ### Instalación IDE arduino   
