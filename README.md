@@ -37,7 +37,7 @@ El proyecto se desarrolla por fases para lo cual se hace necesario por diseño:
  * Soket de 24 pines  
  * Programador arduino UNO  
  * Pantalla LCD 16x2  
- * Teclado 4x3  
+ * Teclado matricial 4x3  
  * Resistencias
  * PCB circuito impreso  
 
@@ -111,6 +111,7 @@ Para encontrar la dirección IP de un ordenador Linux, escriba lo siguiente en l
 ### Sistema de Acceso Codificado ###
 
 Desarrollaremos un mecanismo de acceso que permita el ingreso al personal autorizado al invernadero mediante un contraseña de 4 dígitos
+[Datasheet LCD 16x2](http://www.engineersgarage.com/electronic-components/16x2-lcd-module-datasheet)  
 
 ### Sensores y Comunicacion Modulo Eternet  ###
      
@@ -120,7 +121,7 @@ Se realiza la caracterizacion del sensor de temperatura [LM35](http://www.ti.com
 
 
 ### Interfaz Web ###
-Generar una interfaz web para monitorizar los distintos factores climáticos desde un  ordenador o dispositivo móvil que permita el cultivador mayores garantías en cuanto al cuidado y producción del cultivo.
+Generaramos una interfaz web para monitorizar los distintos factores climáticos desde un  ordenador o dispositivo móvil que permita el cultivador mayores garantías en cuanto al cuidado y producción del cultivo.
 
 ### Circuito fotovoltaico con panel solar (efecto girasol) ###
 La idea es mantener la mejor alineación posible entre el panel solar (celula fotovoltaica) y la dirección en que viaja la radiación del sol, de esta manera se logra generar la mayor cantidad de energía eléctrica la cual se almacenara en una batería.
