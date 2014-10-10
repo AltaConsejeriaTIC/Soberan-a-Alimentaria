@@ -19,27 +19,24 @@ Ademas, se utilizara un sistema fotovoltaico que alimente los circuitos eléctri
 * Emplear unica y exclusivamente herramientas de software libre para el desarrollo del proyecto
 
 ### Materiales ###
-![Energia LaunchPad](http://energia.nu/img/LaunchPadMSP430G2452-v1.5.jpg "MSP-EXP430G2 LaunchPad")
 ![Arduino](http://arduino-info.wikispaces.com/file/view/Mega2560_R3_Label-small-v2%20(2).png/471429496/800x526/Mega2560_R3_Label-small-v2%20(2).png "Arduino Mega")
-<<<<<<< HEAD
 
 1. Acceso electromecánico:
  * Microcontrolador Atmega328
  * Soket de 24 pines  
  * Cristal de 4MHz  
-=======
   
 1. Construcción invernadero
   * 6 Tubos PVC de 1/2
   * 1 madeja de pita
   * 4 metros de cordón
+  * 4 mts de plastico para invernadero de 8x6  
   * 1 varilla metalica 
-  * 16 codos
-  * Segueta
+  * 16 codos  
+  * Segueta  
 
 2. Acceso electromecánico:
  * Microcontrolador Atmega328  
->>>>>>> 0986ad21bd97cc50df6ebba659872d7c9f70137e
  * Programador arduino UNO  
  * Pantalla LCD 16x2  
  * Teclado 4x3  
@@ -58,7 +55,7 @@ Ademas, se utilizara un sistema fotovoltaico que alimente los circuitos eléctri
  * Regulador LM7805  
  * Triac de 100 ohmios  
   
-3. Sistema de riego  
+4. Sistema de riego  
  * 9 Goteros de 2 lph  
  * 6 mts de manguera de 16mm OP  
  * 1 Adaptador 3/4" FHT x NPT Hembra x Macho    
@@ -70,7 +67,7 @@ Ademas, se utilizara un sistema fotovoltaico que alimente los circuitos eléctri
  * 3 Terminales de 16 mm
  * 1 Servomotor    
   
-4. Invernadero monitoreo web  
+5. Invernadero monitoreo web  
 
  * Una placa Arduino como el Arduino Uno  
  * Un escudo Arduino Ethernet  
@@ -78,12 +75,6 @@ Ademas, se utilizara un sistema fotovoltaico que alimente los circuitos eléctri
  * Un cable USB para alimentar y programar el Arduino  
  * Una tarjeta micro SD, por ejemplo, una tarjeta de 2 GB que es compatible SPI - sólo es necesario para algunos de los servidores  
  * Una computadora con una ranura de tarjeta micro SD o un lector de tarjetas con una ranura para tarjeta micro SD - sólo se requiere para los servidores de la tarjeta SD  
-
-<<<<<<< HEAD
-=======
-4. Invernadero monitoreo web
->>>>>>> 0986ad21bd97cc50df6ebba659872d7c9f70137e
-
 
 ### Instalación IDE arduino   
 
@@ -130,8 +121,8 @@ Desarrollar un mecanismo de acceso que permita el ingreso al personal autorizado
      
 Generar una interfaz web para monitorizar los distintos factores climáticos desde un  ordenador o dispositivo móvil que permita el cultivador mayores garantías en cuanto al cuidado y producción del cultivo.
 
-### Proyecto Energía ###
-La idea es mantener la mejor alineación posible entre el panel solar (celula fotovoltaica) y la dirección en que viaja la radiación del sol, de esta manera se logra generar la mayor cantidad de energía eléctrica la cual se almacenara en una batería, esta batería en horas de la noche alimentara el cableado eléctrico de focos, iluminando el lugar.
+### Circuito fotovoltaico con panel solar (efecto girasol) ###
+La idea es mantener la mejor alineación posible entre el panel solar (celula fotovoltaica) y la dirección en que viaja la radiación del sol, de esta manera se logra generar la mayor cantidad de energía eléctrica la cual se almacenara en una batería.
 
 
 
@@ -153,5 +144,3 @@ Linkedin: Diego Javier Mena Amado
 Est. Ingenieria Electrónica de la Universidad Distrital FJC  
 Movil: 3209025813  
 Facebook:  Ivan Camilo Ruiz  
-
-
