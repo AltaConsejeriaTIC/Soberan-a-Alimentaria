@@ -110,7 +110,7 @@ Para encontrar la dirección IP de un ordenador Linux, escriba lo siguiente en l
 
 ### Sistema de Acceso Codificado ###
 
-Desarrollaremos un mecanismo de acceso que permita el ingreso al personal autorizado al invernadero mediante un contraseña de 4 dígitos 
+Desarrollaremos un mecanismo de acceso que permita el ingreso al personal autorizado al invernadero mediante un contraseña de 4 dígitos.  
 [Datasheet LCD 16x2](http://www.engineersgarage.com/electronic-components/16x2-lcd-module-datasheet)  
 
 ### Sensores y Comunicacion Modulo Eternet  ###
