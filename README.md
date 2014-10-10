@@ -21,11 +21,8 @@ Ademas, se utilizara un sistema fotovoltaico que alimente los circuitos eléctri
 ### Materiales ###
 ![Arduino](http://arduino-info.wikispaces.com/file/view/Mega2560_R3_Label-small-v2%20(2).png/471429496/800x526/Mega2560_R3_Label-small-v2%20(2).png "Arduino Mega")
 
-1. Acceso electromecánico:
- * Microcontrolador Atmega328
- * Soket de 24 pines  
- * Cristal de 4MHz  
-  
+El proyecto se desarrolla por fases para lo cual se hace necesario por diseño:
+
 1. Construcción invernadero
   * 6 Tubos PVC de 1/2
   * 1 madeja de pita
@@ -36,7 +33,8 @@ Ademas, se utilizara un sistema fotovoltaico que alimente los circuitos eléctri
   * Segueta  
 
 2. Acceso electromecánico:
- * Microcontrolador Atmega328  
+ * Microcontrolador Atmega328
+ * Soket de 24 pines  
  * Programador arduino UNO  
  * Pantalla LCD 16x2  
  * Teclado 4x3  
@@ -108,14 +106,20 @@ En el cuadro de diálogo Conexión de red Detalles que aparece, la dirección IP
 
 Para encontrar la dirección IP de un ordenador Linux, escriba lo siguiente en la línea de comandos:  
 
-$ ifconfig | grep "inet addr" 
+<p align="center">$ ifconfig | grep "inet addr"</p> 
 
-### Proyecto De Acceso Codificado ###
+### Sistema de Acceso Codificado ###
 
-Desarrollar un mecanismo de acceso que permita el ingreso al personal autorizado al invernadero por medio de un contraseña  de 4 dígitos
+Desarrollaremos un mecanismo de acceso que permita el ingreso al personal autorizado al invernadero mediante un contraseña de 4 dígitos
 
-### Proyecto Monitoreo Ambiente En Aplicaciones Web ###
+### Sensores y Comunicacion Modulo Eternet  ###
      
+Se realiza la caracterizacion del sensor de temperatura [LM35](http://www.ti.com.cn/cn/lit/ds/symlink/lm35.pdf) y el sensor de humedad [DHT11](http://www.micro4you.com/files/sensor/DHT11.pdf)
+
+### Actuadores ventiladores y luz led ###
+
+
+### Interfaz Web ###
 Generar una interfaz web para monitorizar los distintos factores climáticos desde un  ordenador o dispositivo móvil que permita el cultivador mayores garantías en cuanto al cuidado y producción del cultivo.
 
 ### Circuito fotovoltaico con panel solar (efecto girasol) ###
