@@ -3,6 +3,12 @@
 #include <Ethernet.h>
 #include <Server.h>
 #include <Udp.h>
+#include <DHT.h> //cargamos la librería DHT
+#define DHTPIN 12
+#define DHTTYPE DHT11 
+//Seleccionamos el pin en el que se //conectará el sensor
+//Se selecciona el DHT11 (hay //otros DHT)
+DHT dht(DHTPIN, DHTTYPE); //Se inicia una variable que será usada por Arduino para comunicarse con el sensor
 
 // Enter a MAC address and IP address for your controller below.
 // The IP address will be dependent on your local network:
@@ -20,6 +26,13 @@ int PinLed2= 4; //esto sera actuador 2 en algun momento
 String readString = String(30);
 
 
+
+int analog_pin = 0;
+float temperatura;
+
+
+
+
 void setup()
 {
   // start the Ethernet connection and the server:
@@ -29,12 +42,22 @@ void setup()
   pinMode(PinLed2,OUTPUT);
   //pinMode(Entrada1,INPUT);
   //pinMode(Entrada2,INPUT);
+dht.begin(); //Se inicia el sensor
+//pinMode(2,INPUT_PULLUP);
+pinMode(12, INPUT);
+digitalWrite(12, HIGH); //pullup
+
 }
 
 void loop()
 {
+  int h = dht.readHumidity(); //Se lee la humedad
+//float t = dht.readTemperature(); //Se lee la temperatura
+temperatura = analogRead(analog_pin);
+  temperatura = 5.0*temperatura*100.0/1024.0;
+  
   // listen for incoming clients
-  EthernetClient client = server.available();
+    EthernetClient client = server.available();
   if (client) {
     // an http request ends with a blank line
     boolean currentLineIsBlank = true;
@@ -48,16 +71,16 @@ void loop()
         if (c=='\n') //Si la peticion HTTP ha finalizado
         {
           //Determinar lo que se recibe mediante GET para encender el Led o apagarlo
-          if(readString.indexOf("Led1=On")>0){
+          if(readString.indexOf("Led1=Encender")>0){
             digitalWrite(PinLed1,HIGH);
           }
-          if(readString.indexOf("Led1=Off")>0){
+          if(readString.indexOf("Led1=Apagar")>0){
             digitalWrite(PinLed1,LOW);
           }
-          if(readString.indexOf("Led2=On")>0){
+          if(readString.indexOf("Led2=Encender")>0){
             digitalWrite(PinLed2,HIGH);
           }
-          if(readString.indexOf("Led2=Off")>0){
+          if(readString.indexOf("Led2=Apagar")>0){
             digitalWrite(PinLed2,LOW);
           }
 
@@ -68,7 +91,7 @@ void loop()
           client.println("Content-Type: text/html");
          
         //   client.println("Connection: close");  // the connection will be closed after completion of the response
-	//    client.println("Refresh: 1");  // refresh the page automatically every 5 sec
+	 //   client.println("Refresh: 1");  // refresh the page automatically every 5 sec
             client.println();  
           //Crear pagina web HTML
 
@@ -82,12 +105,20 @@ void loop()
           client.println("<h3>Encendido/Apagado de instrumentos</h3>");
           client.println("<hr><br>");
           client.println("<table>");
-          client.println("<tr><td>LED 1</td><td>LED 2</td></tr>");
-          client.println("<tr><td><form method=get><input type=submit name=Led1 value=On></form></td><td><form method=get><input type=submit name=Led2 value=On></form></td></tr>");
-          client.println("<tr><td><form method=get><input type=submit name=Led1 value=Off></form></td><td><form method=get><input type=submit name=Led2 value=Off></form></td></tr>");
+          client.println("<tr><td>Iluminacion</td><td>Ventilacion</td></tr>");
+          client.println("<tr><td><form method=get><input type=submit name=Led1 value=Encender></form></td><td><form method=get><input type=submit name=Led2 value=Encender></form></td></tr>");
+          client.println("<tr><td><form method=get><input type=submit name=Led1 value=Apagar  ></form></td><td><form method=get><input type=submit name=Led2 value=Apagar></form></td></tr>");
           client.println("</table>");
           client.println("<hr><br>");
           client.println("<h3>Lectura de sensores</h3>");
+          client.println("La tempetara es");
+          client.println("<br>");
+          client.println(temperatura);
+           client.println("<br>");
+          client.println("La humedad es");
+          client.println("<br>");
+          client.println(h);
+          client.println("<hr>  <br>");
           client.println("</body>");
           client.println("</html>");
 
