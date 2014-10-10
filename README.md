@@ -21,15 +21,23 @@ Ademas, se utilizara un sistema fotovoltaico que alimente los circuitos eléctri
 ### Materiales ###
 ![Energia LaunchPad](http://energia.nu/img/LaunchPadMSP430G2452-v1.5.jpg "MSP-EXP430G2 LaunchPad")
 ![Arduino](http://arduino-info.wikispaces.com/file/view/Mega2560_R3_Label-small-v2%20(2).png/471429496/800x526/Mega2560_R3_Label-small-v2%20(2).png "Arduino Mega")
+  
+1. Construcción invernadero
+  * 6 Tubos PVC de 1/2
+  * 1 madeja de pita
+  * 4 metros de cordón
+  * 1 varilla metalica 
+  * 16 codos
+  * Segueta
 
-1. Acceso electromecánico:
+2. Acceso electromecánico:
  * Microcontrolador Atmega328  
  * Programador arduino UNO  
  * Pantalla LCD 16x2  
  * Teclado 4x3  
  * Vaquela  
 
-2. Circuito fotovoltaico  
+3. Circuito fotovoltaico  
  * MSP-EXP430G2 LaunchPad  
  * 2 Fotoresistencias  
  * Celdas solares 12V 200mAh  
@@ -41,7 +49,7 @@ Ademas, se utilizara un sistema fotovoltaico que alimente los circuitos eléctri
  * Regulador LM7805  
  * Triac de 100 ohmios  
 
-3. Invernadero monitoreo web
+4. Invernadero monitoreo web
 
  * Una placa Arduino como el Arduino Uno
  * Un escudo Arduino Ethernet
