@@ -30,7 +30,7 @@ Ademas, se utilizara un sistema fotovoltaico que alimente los circuitos eléctri
 =======
 El proyecto se desarrolla por fases para lo cual se hace necesario por diseño:
 
->>>>>>> 89806d1e84764afff19d8a43a67b25b1d6cb1996
+
 1. Construcción invernadero
   * 6 Tubos PVC de 1/2
   * 1 madeja de pita
@@ -45,11 +45,8 @@ El proyecto se desarrolla por fases para lo cual se hace necesario por diseño:
  * Soket de 24 pines  
  * Programador arduino UNO  
  * Pantalla LCD 16x2  
-<<<<<<< HEAD
  * Teclado 4x3  
-=======
  * Teclado matricial 4x3  
->>>>>>> 89806d1e84764afff19d8a43a67b25b1d6cb1996
  * Resistencias
  * PCB circuito impreso  
 
@@ -105,7 +102,7 @@ Para utilizar la librería Ethernet.h se debe configurar la IP de acuerdo a su r
 Determinar el rango de direcciones IP  
 
 El rango de direcciones que el PC está utilizando debe ser determinado. El Arduino entonces se le asigna una dirección dentro de este rango que permitirá un navegador web en el PC para conectarse al servidor web Arduino.
-### windows 7 ###
+### Windows 7 ###
 
 En Windows 7, haga clic en el icono de acceso a Internet en la barra inferior de Windows. Es posible que primero deba hacer clic en la pequeña "flecha hacia arriba" para el icono de la red que se muestra .  
 
@@ -118,7 +115,7 @@ En el cuadro de diálogo Conexión de red Detalles que aparece, la dirección IP
 
 Para encontrar la dirección IP de un ordenador Linux, escriba lo siguiente en la línea de comandos:  
 
-<<<<<<< HEAD
+
 $ ifconfig | grep "inet addr" 
 =======
 <p align="center">$ ifconfig | grep "inet addr"</p> 
@@ -126,9 +123,7 @@ $ ifconfig | grep "inet addr"
 ### Sistema de Acceso Codificado ###
 
 Desarrollaremos un mecanismo de acceso que permita el ingreso al personal autorizado al invernadero mediante un contraseña de 4 dígitos.  
-[Datasheet LCD 16x2](http://www.engineersgarage.com/electronic-components/16x2-lcd-module-datasheet)  
->>>>>>> 89806d1e84764afff19d8a43a67b25b1d6cb1996
-
+[Datasheet LCD 16x2](http://www.engineersgarage.com/electronic-components/16x2-lcd-module-datasheet)    
 ### Sensores y Comunicacion Modulo Eternet  ###
      
 Se realiza la caracterizacion del sensor de temperatura [LM35](http://www.ti.com.cn/cn/lit/ds/symlink/lm35.pdf) y el sensor de humedad [DHT11](http://www.micro4you.com/files/sensor/DHT11.pdf)
@@ -136,12 +131,10 @@ Se realiza la caracterizacion del sensor de temperatura [LM35](http://www.ti.com
 ### Actuadores ventiladores y luz led ###
 
 
-<<<<<<< HEAD
-=======
-### Interfaz Web ###
+## Interfaz Web ###
 Generaramos una interfaz web para monitorizar los distintos factores climáticos desde un  ordenador o dispositivo móvil que permita el cultivador mayores garantías en cuanto al cuidado y producción del cultivo.
 
->>>>>>> 89806d1e84764afff19d8a43a67b25b1d6cb1996
+
 ### Circuito fotovoltaico con panel solar (efecto girasol) ###
 La idea es mantener la mejor alineación posible entre el panel solar (celula fotovoltaica) y la dirección en que viaja la radiación del sol, de esta manera se logra generar la mayor cantidad de energía eléctrica la cual se almacenara en una batería.
 
@@ -162,6 +155,8 @@ Twitter: @ DiegoJavierMena
 Linkedin: Diego Javier Mena Amado  
 
 * Desarrollador: Ivan Camilo Ruiz Mongui    
-Est. Ingenieria Electrónica de la Universidad Distrital FJC  
+Ingeniero Electrónico de la Universidad Distrital FJC  
 Movil: 3209025813  
 Facebook:  Ivan Camilo Ruiz  
+Twitter: @camiloud
+Linkedin: Iván Camilo Ruiz
